@@ -2,7 +2,7 @@ import {
     TeamsActivityHandler,
     TurnContext
 } from 'botbuilder';
-import { getAIResponse } from '../services/azureOpenAI';
+import { getAIResponse } from '../services/ragApi';
 
 export class TeamsAssistAIBot extends TeamsActivityHandler {
     constructor() {
@@ -38,3 +38,4 @@ export class TeamsAssistAIBot extends TeamsActivityHandler {
         });
     }
 }
+
